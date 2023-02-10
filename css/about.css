@@ -1,0 +1,234 @@
+
+.about-headline h1{
+    text-align: center;
+    padding: 25px 0;
+    font-family: Poppins-ExtraBold, sans-serif;
+    color: #3c3c3c;
+
+}
+
+.about-who {
+    margin: 50px 10%;
+    text-align: center;
+    padding: 30px 0;
+    color: #3c3c3c;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    border: 3px double var(--sidered);
+}
+.about-who h1{
+    font-family: Poppins-SemiBold, sans-serif;
+}
+.about-who p {
+    padding: 30px 20x;
+}
+
+.middle-box{
+    padding: 50px 10%;
+    background: url("../images/background/leaf-floating.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.about-what{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed gray;
+}
+
+.about-what h1 {
+    font-family: Poppins-SemiBold, sans-serif;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+.stand-for-box {
+    margin: 40px auto 50px;
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    justify-content: space-between;
+}
+
+.what-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+
+.what-card:hover{
+    box-shadow: 0 0 10px 2px lightgrey;
+    border: 1px solid var(--strongorange);
+
+}
+
+.about-what-image {
+    width: 50%;
+    margin: 0 auto 30px;
+}
+
+.about-what-image img {
+    width: 100%;
+}
+
+
+.upto {
+    margin: 100px 0 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.upto-icon{
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+.upto-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.upto-header h1{
+    color: #3c3c3c;
+    font-family: Poppins-SemiBold, sans-serif;
+}
+
+.upto-card {
+    width: 30%;
+    text-align: center;
+    padding: 50px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255);
+    border-radius: 12px;
+    opacity: 72%;
+    box-shadow: 0 0 10px 1px lightgray;
+}
+.upto-card:hover{
+    transform: scale(1.02);
+    opacity: 100%;
+    box-shadow: 0 0 15px 2px lightgray;
+}
+.upto-card h1 {
+    font-size: x-large;
+    font-family: Poppins-SemiBold, sans-serif;
+    color: var(--strongorange);
+    margin-bottom: 15px;
+}
+
+.upto-card button {
+    width: 40%;
+    height: 40px;
+    margin: 50px auto 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #F90000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.upto-card a {
+    text-decoration: none;
+    color: white;
+}
+
+.about-why {
+    margin: 50px 10%;
+    border-radius: 12px;
+    position: relative;
+}
+.about-why-bg{
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("../images/background/erol-ahmed-IHL-Jbawvvo-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.about-why-text {
+    padding: 50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about-why-text h1{
+    font-family: Poppins-SemiBold, sans-serif;
+}
+
+.about-why-text button {
+    padding: 10px 15px;
+    margin: 30px auto 0;
+    border: none;
+    border-radius: 8px;
+   
+    background-color: var(--sidered);
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.about-why-text a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-why-image {
+    border-radius: 0 0 10px 10px;
+    padding: 5px 20px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.about-why-image img {
+    width: 100px;
+    height: 100px;
+}
+.about-why-image img:last-child{
+    width: 80px;
+    height: 80px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .middle-box{
+        background-size: contain;
+    }
+   .stand-for-box{
+    grid-template-columns: 49% 49%;
+   }
+   .what-card{
+    margin: 15px 0;
+   }
+   .upto-card{
+    width: 100%;
+    margin: 25px 0  ;
+   }
+}
+
+@media only screen and (max-width: 640px) {
+    .stand-for-box{
+        grid-template-columns:100%;
+       }
+    .about-why-text {
+        padding-top: 130px;
+    }
+}
+
+
